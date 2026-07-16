@@ -2,6 +2,10 @@
 
 Projeto desenvolvido como solução para o desafio **Task Tracker CLI** do roadmap.sh.
 
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=devthomaseduardo&repo=task-tracker-cli&color=orange" alt="Repository Views" />
+</p>
+
 ## Sobre
 
 Task Tracker CLI é uma aplicação de linha de comando (CLI) para gerenciamento de tarefas. As tarefas são armazenadas em um arquivo JSON local, sem utilização de bibliotecas externas.
@@ -135,3 +139,11 @@ Praticar conceitos fundamentais de desenvolvimento backend com Node.js:
 ## Desafio Original
 
 https://roadmap.sh/projects/task-tracker
+
+---
+
+> **📊 Visualizações deste repositório**  
+> O badge acima mostra o número de visualizações únicas deste README (atualizado automaticamente via [komarev.com](https://komarev.com/ghpvc)).  
+> Obrigado pela visita! Se o projeto te inspirou, considere deixar uma estrela ⭐️.
+
+**Padrão aplicado em todos os repositórios de Thomas Eduardo.**
