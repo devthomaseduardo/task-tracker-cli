@@ -1,149 +1,42 @@
 # Task Tracker CLI
 
-Projeto desenvolvido como solução para o desafio **Task Tracker CLI** do roadmap.sh.
+CLI de tarefas em **Node.js** (ES Modules), persistência em JSON local, sem dependências externas. Solução do desafio [roadmap.sh/task-tracker](https://roadmap.sh/projects/task-tracker).
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=devthomaseduardo&repo=task-tracker-cli&color=orange" alt="Repository Views" />
-</p>
+Autor: [Thomas Eduardo](https://thomaseduardo.com.br) · [GitHub](https://github.com/devthomaseduardo/task-tracker-cli)
 
-## Sobre
+## Propósito
 
-Task Tracker CLI é uma aplicação de linha de comando (CLI) para gerenciamento de tarefas. As tarefas são armazenadas em um arquivo JSON local, sem utilização de bibliotecas externas.
+- Praticar CLI, filesystem e separação de responsabilidades em Node.
+- CRUD de tarefas com status (`todo`, `in-progress`, `done`).
 
 ## Funcionalidades
 
-* Adicionar tarefas
-* Atualizar tarefas
-* Remover tarefas
-* Marcar tarefas como concluídas
-* Marcar tarefas como em andamento
-* Listar todas as tarefas
-* Filtrar tarefas por status
+| Comando | Efeito |
+|---------|--------|
+| `task-cli add "…"` | Adiciona |
+| `task-cli update <id> "…"` | Atualiza |
+| `task-cli delete <id>` | Remove |
+| `task-cli mark-in-progress <id>` | Em andamento |
+| `task-cli mark-done <id>` | Concluída |
+| `task-cli list` | Lista todas |
+| `task-cli list done\|todo\|in-progress` | Filtra por status |
 
-## Tecnologias
+## Stack
 
-* Node.js
-* JavaScript (ES Modules)
-* File System (fs)
-
-## Estrutura do Projeto
-
-```txt
-src/
-├── commands/
-├── constants/
-├── database/
-├── services/
-├── utils/
-└── index.js
-```
+| Camada | Tecnologia |
+|--------|------------|
+| Runtime | **Node.js** |
+| Linguagem | **JavaScript** (ESM) |
+| Persistência | **fs** + JSON |
 
 ## Instalação
 
-Clone o repositório:
-
 ```bash
-git clone <url-do-repositorio>
-```
-
-Acesse a pasta:
-
-```bash
+git clone https://github.com/devthomaseduardo/task-tracker-cli.git
 cd task-tracker-cli
-```
-
-Instale o comando localmente:
-
-```bash
 npm link
 ```
 
-## Uso
+## Licença
 
-### Adicionar uma tarefa
-
-```bash
-task-cli add "Comprar leite"
-```
-
-### Atualizar uma tarefa
-
-```bash
-task-cli update 1 "Comprar leite e pão"
-```
-
-### Remover uma tarefa
-
-```bash
-task-cli delete 1
-```
-
-### Marcar como em andamento
-
-```bash
-task-cli mark-in-progress 1
-```
-
-### Marcar como concluída
-
-```bash
-task-cli mark-done 1
-```
-
-### Listar todas as tarefas
-
-```bash
-task-cli list
-```
-
-### Listar tarefas concluídas
-
-```bash
-task-cli list done
-```
-
-### Listar tarefas pendentes
-
-```bash
-task-cli list todo
-```
-
-### Listar tarefas em andamento
-
-```bash
-task-cli list in-progress
-```
-
-## Estrutura da Tarefa
-
-```json
-{
-  "id": 1,
-  "descricao": "Comprar leite",
-  "status": "todo",
-  "criadaEm": "2026-06-08T20:00:00.000Z",
-  "atualizadaEm": "2026-06-08T20:00:00.000Z"
-}
-```
-
-## Objetivo
-
-Praticar conceitos fundamentais de desenvolvimento backend com Node.js:
-
-* Manipulação de arquivos
-* Estruturação de projetos
-* Desenvolvimento de aplicações CLI
-* Persistência de dados em JSON
-* Separação de responsabilidades
-
-## Desafio Original
-
-https://roadmap.sh/projects/task-tracker
-
----
-
-> **📊 Visualizações deste repositório**  
-> O badge acima mostra o número de visualizações únicas deste README (atualizado automaticamente via [komarev.com](https://komarev.com/ghpvc)).  
-> Obrigado pela visita! Se o projeto te inspirou, considere deixar uma estrela ⭐️.
-
-**Padrão aplicado em todos os repositórios de Thomas Eduardo.**
+MIT © Thomas Eduardo
